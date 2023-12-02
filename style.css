@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Start from here */
+body {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 20px #aaaaaa;
+}
+
+main {
+  padding: 15px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*align-items: center;*/
+}
+
+div.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  text-align: center;
+}
+
+div.crypto {
+  font-size: 1.3rem;
+}
+
+div.crypto-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+div.crypto-top > span {
+  margin-left: 10px;
+}
+
+div.weather {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: auto;
+}
+
+p.weather-city {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: right;
+  margin-top: -10px;
+}
+
+p.weather-temp {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
